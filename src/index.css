@@ -9,6 +9,7 @@
     box-sizing: border-box;
 }
 
+/* ! this is the addtional css that I have written to hide the menu toggle icons on larger screens */
 
 @media (min-width:768px){
     .menu-btn,.close-btn{

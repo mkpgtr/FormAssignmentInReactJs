@@ -6,7 +6,7 @@ const FormInput = ({type,name,label,topMargin,radioOptions,handleChange}) => {
     
 
 
-    
+    // !when the type is submit then return this jsx
 
     if(type==='submit'){
         return  <div style={{marginTop:topMargin+'rem'}}className={`flex flex-col items-center max-w-[40rem] m-auto  border-4  p-5 justify-between`}>
@@ -22,6 +22,7 @@ const FormInput = ({type,name,label,topMargin,radioOptions,handleChange}) => {
 
     }
     
+    // !when the type is radio then return this jsx
     if(type==='radio'){
         return  <div style={{marginTop:topMargin+'rem'}}className={`flex flex-col items-center max-w-[40rem] m-auto  border-4  p-5 justify-between`}>
        
@@ -47,7 +48,9 @@ const FormInput = ({type,name,label,topMargin,radioOptions,handleChange}) => {
     </div>
     }
 
+   // !when the type is text submit then return this jsx
    
+
   return (
     <div style={{marginTop:topMargin+'rem'}}className={`flex flex-col items-center max-w-[40rem] m-auto  border-4  p-5 justify-between`}>
        

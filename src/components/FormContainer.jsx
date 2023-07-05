@@ -5,7 +5,7 @@ import Form from './Form'
 
 const FormContainer = () => {
    
-
+// ! these are the input data
     const formInputs = [
         {
             id: 1,
