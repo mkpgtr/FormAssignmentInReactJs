@@ -9,6 +9,12 @@
     box-sizing: border-box;
 }
 
+/* ! disable horizontal scroll */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    }
+
 /* ! this is the addtional css that I have written to hide the menu toggle icons on larger screens */
 
 @media (min-width:768px){
