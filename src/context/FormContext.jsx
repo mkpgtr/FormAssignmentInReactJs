@@ -17,6 +17,7 @@ const formObject = {
 const FormProvider = ({children}) => {
 
     const [formValues,setFormValues] = useState(formObject)
+    const [isErrorVisible,setIsErrorVisible] = useState(false)
     const formRef = useRef()
     
     const handleChange = (e)=>{
@@ -52,7 +53,7 @@ const FormProvider = ({children}) => {
         
     }
   return (
-    <FormContext.Provider value = {{handleChange,onSubmit,formValues,formRef}}>
+    <FormContext.Provider value = {{handleChange,onSubmit,formValues,formRef,isErrorVisible,setIsErrorVisible}}>
 
         {children}
     </FormContext.Provider>
